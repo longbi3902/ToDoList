@@ -7,15 +7,15 @@
   <title>Todo List</title>
 </head>
 <body>
-  <h1>Todo List</h1>
+  <h1>Todo-List</h1>
   <ul>
     <% todoItems.forEach(item => { %>
       <li style="display: flex;">
-        <div style="margin: 20px;">
+        <div style="margin: 20px; width: 100px;">
         <%= item.task %>
         </div>
         <div style="display: flex;">
-        <a href="/edit/<%= item.id %>">Edit</a>
+        <a style="width: 100px;" href="/edit/<%= item.id %>">Edit</a>
         <form method="post" action="/delete/<%= item.id %>">
           <button type="submit">Delete</button>
         </form>

@@ -5,7 +5,8 @@ body {
   
   h1 {
     color: red;
-    margin-bottom: 20px;
+    font-size: 80;
+    font-weight: 400;
   }
   
   ul {
@@ -18,14 +19,19 @@ body {
     margin: 10px 0;
     padding: 10px;
   }
-  
-  a, 
+  a{
+    text-decoration: none;
+    margin-top: 20px;
+    cursor: pointer;
+    color: blue;
+  } 
   button {
     background-color: #dc3545;
     color: #fff;
     border: none;
-    margin: 5px 10px;
+    margin: 10px 10px;
     padding: 5px 10px;
+    margin-top: 15px;
     cursor: pointer;
     
   }

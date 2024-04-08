@@ -3,7 +3,9 @@ const router = express.Router();
 
 // Sample data (replace this with your actual data storage)
 let todoItems = [
-  { id: 1, task: 'Buy groceries' },
+  { id: 1, task: 'Đi chợ' },
+  { id: 1, task: 'Nấu cơm' },
+  { id: 1, task: 'Giặt quần áo' },
   // Add more todo items as needed
 ];
 
@@ -49,3 +51,21 @@ router.post('/delete/:id', (req, res) => {
 });
 
 module.exports = router;
+
+// 'use strict';
+// module.exports = function(app) {
+//   let productsCtrl = require('./controller/controller');
+
+//   // todoList Routes
+//   app.route('/getall')
+//     .get(productsCtrl.get)
+
+
+//   app.route('/v1/product/create')
+//     .post(productsCtrl.store);
+
+//   app.route('/products/:productId')
+//     .get(productsCtrl.detail)
+//     .put(productsCtrl.update)
+//     .delete(productsCtrl.delete);
+// };
