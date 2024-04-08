@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style/main.css">
+  <title>Todo List</title>
+</head>
+<body>
+  <h1>Todo List</h1>
+  <ul>
+    <% todoItems.forEach(item => { %>
+      <li style="display: flex;">
+        <div style="margin: 20px;">
+        <%= item.task %>
+        </div>
+        <div style="display: flex;">
+        <a href="/edit/<%= item.id %>">Edit</a>
+        <form method="post" action="/delete/<%= item.id %>">
+          <button type="submit">Delete</button>
+        </form>
+      </div>
+      </li>
+    <% }); %>
+  </ul>
+  <a href="/new">Add New Task</a>
+  <style></style>
+</body>
+</html>
